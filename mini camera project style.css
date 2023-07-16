@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+ /* body {
+   
+    /* background-image: url(camera\ photo.jpg);
+    background-size: cover; 
+
+}  */
+.main_box {
+    background-image: url(camera\ photo.jpg);
+     height: 100vh;
+    /*  or can also use this relative unit >> height: 100em;*/
+    background-size: cover; 
+}
+
+.btn_one i {
+    color: red;
+    font-size: 30px;
+   position: absolute;
+   left:20px;
+   line-height: 60px;
+   transition: all 0.3s linear;
+   cursor: pointer;
+}
+
+.sidebar_menu {
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+   background-color: rgba(255, 255, 255, 0.1);
+   box-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
+   transition: all 0.3s linear;
+}
+
+.sidebar_menu .logo {
+    position: absolute;
+    line-height: 60px;
+    width: 100%;
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.4);
+}
+
+.sidebar_menu .logo a {
+    position: absolute;
+    left: 60px;
+    color: honeydew;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+
+}
+
+.sidebar_menu .btn_two i {
+    color: red;
+    position: absolute;
+    left: 282px;
+    line-height: 30px;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+.sidebar_menu .menu {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    
+
+}
+
+.sidebar_menu .menu li {
+    padding: 10px 20px;
+}
+
+.sidebar_menu .menu i,a {
+    color: honeydew;
+    text-decoration: none;
+    font-size: large;
+}
+
+.sidebar_menu .menu i {
+    padding-right: 6px;
+}
+
+.sidebar_menu .social_media {
+    position: absolute;
+    /* top: 400px;  this is also correct */
+    left: 25%;
+    bottom: 30px; /* this is done acc to original position of social media div icons  */
+    
+}
+
+.sidebar_menu .social_media i {
+    opacity: 0.5;
+    color: siver;
+    padding: 10px;
+}
+
+#check {
+    display: none;
+}
+
+.sidebar_menu .menu li:hover {
+    box-shadow: 0  0 3px rgba(255, 255, 255, 0.5);
+}
+
+.btn_one i:hover {
+    font-size: 40px;
+}
+
+.btn_two i:hover {
+    font-size: 20px;
+}
+
+.sidebar_menu .social_media i:hover {
+    opacity: 1;
+    transform: scale(1.2);
+
+}
+
+.sidebar_menu .logo {
+    height: 50px;
+    box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+}
+
+#check:checked ~ .sidebar_menu {
+    left: 0; /* everything comes back on margin of viewport */
+
+}
+
+#check:checked ~ .btn_one {
+    opacity: 0;
+}
+
+#check:checked ~ .sidebar_menu .btn_two i {
+    opacity: 1;
+}
+
+
+
+
+
+
+
